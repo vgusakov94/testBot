@@ -38,7 +38,7 @@ function mainMenu(chatId) {
             ]
         })
     };
-    bot.sendMessage(chatId, "Чем Я могу помочь? ", opts).then(previousMessage = '');
+    bot.sendMessage(chatId, " ", opts).then(previousMessage = '');
 }
 
 function insertCard(cardDate, chatId) {
