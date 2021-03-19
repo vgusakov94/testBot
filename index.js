@@ -135,6 +135,7 @@ bot.on("message", msg => {
 
                 contactId = res.records[0].Id;
                 chatId = msg.chat.id;
+                mainMenu(chatId);
                 //bot.sendMessage(chatId, "Авторизация прошла успешно!").then(mainMenu(chatId));
             }
         );
