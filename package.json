@@ -1,0 +1,8 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "dependencies": {
+    "jsforce": "^1.9.3",
+    "node-telegram-bot-api": "^0.50.0"
+  }
+}
