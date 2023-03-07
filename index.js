@@ -105,14 +105,16 @@ bot.on("callback_query", callbackQuery => {
 bot.on("message", msg => {
     if (msg.text == "/start") {
         previousMessage = "";
-        conn.login(loginSF, passwordSF, function (err, res) {
-            if (err) {
-                bot.sendMessage(msg.chat.id, "Ошибка авторизации в Salesforce");
-                return console.error(err);
-            } else {
-                bot.sendMessage(msg.chat.id, "Введите логин: ").then((previousMessage = "login"));
-            }
-        })
+        // previousMessage = "";
+        // conn.login(loginSF, passwordSF, function (err, res) {
+        //     if (err) {
+        //         bot.sendMessage(msg.chat.id, "Ошибка авторизации в Salesforce");
+        //         return console.error(err);
+        //     } else {
+        //         bot.sendMessage(msg.chat.id, "Введите логин: ").then((previousMessage = "login"));
+        //     }
+        // })
+        bot.sendMessage(msg.chat.id, msg.chat);
     } else if (previousMessage == "login") {
         login = msg.text;
         bot.sendMessage(msg.chat.id, "Введите пароль: ").then((previousMessage = "password"));
