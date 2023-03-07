@@ -114,7 +114,7 @@ bot.on("message", msg => {
         //         bot.sendMessage(msg.chat.id, "Введите логин: ").then((previousMessage = "login"));
         //     }
         // })
-        bot.sendMessage(msg.chat.id, msg.chat);
+        bot.sendMessage(msg.chat.id, "Привет!");
     } else if (previousMessage == "login") {
         login = msg.text;
         bot.sendMessage(msg.chat.id, "Введите пароль: ").then((previousMessage = "password"));
