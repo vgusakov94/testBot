@@ -2,7 +2,7 @@ const TelegramBot = require("node-telegram-bot-api");
 const port = process.env.PORT || 443;
 const host = "0.0.0.0";
 const externalUrl = process.env.CUSTOM_ENV_VARIABLE || "https://web-production-4d31.up.railway.app/";
-const token = '5993412829:AAEMCxk_2MplGufZFb7Tog1CUXr3OYpgYIY';
+const token = '5993412829:AAEMCxk_2MplGufZFb7Tog1CUXr3OYpgYIYY';
 const bot = new TelegramBot(token, {webHook: {port: port, host: host}});
 bot.setWebHook(externalUrl + ':443/bot' + token);
 
